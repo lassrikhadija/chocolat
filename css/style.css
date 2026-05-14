@@ -1118,6 +1118,218 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .reveal.is-visible { opacity: 1; transform: translateY(0); }
 
+/* ============ CONSENT CHECKBOX (Loi 25) ============ */
+.form__consent { margin: 8px 0 22px; }
+.consent {
+  display: flex; gap: 14px; align-items: flex-start;
+  cursor: pointer;
+  padding: 16px 18px;
+  background: rgba(200,146,74,0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: border-color .25s, background .25s;
+}
+.consent:hover { border-color: var(--copper-deep); background: rgba(200,146,74,0.08); }
+.consent input {
+  position: absolute;
+  opacity: 0; pointer-events: none;
+}
+.consent__box {
+  flex-shrink: 0;
+  width: 20px; height: 20px;
+  border: 1.5px solid var(--copper);
+  border-radius: 3px;
+  background: var(--bg);
+  transition: all .2s;
+  position: relative;
+  margin-top: 2px;
+}
+.consent input:checked + .consent__box {
+  background: var(--copper);
+  border-color: var(--copper);
+}
+.consent input:checked + .consent__box::after {
+  content: "";
+  position: absolute;
+  left: 5px; top: 1px;
+  width: 6px; height: 11px;
+  border-right: 2px solid #14090a;
+  border-bottom: 2px solid #14090a;
+  transform: rotate(45deg);
+}
+.consent input:focus-visible + .consent__box {
+  outline: 2px solid var(--copper);
+  outline-offset: 2px;
+}
+.consent__text {
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--cream-muted);
+}
+.consent__text a {
+  color: var(--copper);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.consent__text a:hover { color: var(--copper-light); }
+.consent__text strong { color: var(--cream); }
+
+/* Newsletter consent */
+.newsletter__consent {
+  font-size: 0.78rem;
+  color: var(--cream-soft);
+  line-height: 1.55;
+  margin-top: 12px;
+}
+.newsletter__consent a {
+  color: var(--copper);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.newsletter__consent a:hover { color: var(--copper-light); }
+
+/* ============ FOOTER COMPLIANCE STRIP (Loi 25 trust bar) ============ */
+.footer__compliance {
+  font-size: 0.85rem;
+  color: var(--cream-soft);
+  line-height: 1.55;
+}
+.footer__compliance strong { color: var(--copper); font-weight: 500; }
+
+.footer__compliance-strip {
+  border-top: 1px solid var(--border);
+  padding: 22px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+  max-width: var(--maxw); margin: 0 auto;
+}
+.compliance-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  color: var(--cream-muted);
+  text-transform: none;
+}
+.compliance-badge svg { color: var(--copper); flex-shrink: 0; }
+.compliance-badge strong { color: var(--copper); font-weight: 600; }
+
+@media (max-width: 640px) {
+  .footer__compliance-strip { gap: 14px; padding: 18px 24px; }
+  .compliance-badge { font-size: 0.75rem; }
+}
+
+/* ============ LEGAL PAGES (Politique / Mentions) ============ */
+.header--solid {
+  background: rgba(20,9,10,0.96) !important;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+
+.legal-page {
+  padding: 140px 0 100px;
+  background:
+    radial-gradient(ellipse at 15% 0%, rgba(200,146,74,0.05) 0%, transparent 55%),
+    var(--bg);
+  min-height: 80vh;
+}
+
+.eyebrow--center {
+  display: block;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 22px;
+}
+.eyebrow--center::before { display: none; }
+
+.legal__title {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
+  color: var(--cream);
+  text-align: center;
+  margin-bottom: 14px;
+  letter-spacing: -0.012em;
+}
+.legal__updated {
+  text-align: center;
+  color: var(--cream-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.legal__section {
+  margin-bottom: 44px;
+  padding-bottom: 8px;
+}
+.legal__section h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  font-size: 1.55rem;
+  color: var(--copper);
+  margin-bottom: 18px;
+  letter-spacing: -0.005em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+.legal__section p {
+  color: var(--cream-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+.legal__section p em { color: var(--copper); font-style: italic; }
+.legal__section p strong { color: var(--cream); }
+.legal__section a {
+  color: var(--copper);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal__section a:hover { color: var(--copper-light); }
+
+.legal__list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.legal__list li {
+  position: relative;
+  padding: 10px 0 10px 22px;
+  color: var(--cream-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  border-bottom: 1px dashed rgba(80,59,44,0.5);
+}
+.legal__list li:last-child { border-bottom: none; }
+.legal__list li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 22px;
+  width: 8px; height: 1px;
+  background: var(--copper);
+}
+.legal__list li strong { color: var(--cream); font-weight: 500; }
+
+.legal__back {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid var(--border);
+}
+.legal__back a {
+  color: var(--copper);
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+}
+.legal__back a:hover { color: var(--copper-light); }
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

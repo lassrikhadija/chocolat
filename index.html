@@ -579,10 +579,22 @@
             <textarea name="message" rows="3"></textarea>
           </label>
         </div>
+
+        <div class="form__consent">
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span class="consent__box" aria-hidden="true"></span>
+            <span class="consent__text">
+              J'accepte que Maison Cacao traite mes renseignements personnels aux fins du traitement de cette demande, conformément à la <a href="politique-confidentialite.html">politique de confidentialité</a> et à la <strong>Loi 25</strong> du Québec.
+            </span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn--copper btn--full">Envoyer ma demande</button>
         <p class="form__note">
           <span class="check"></span> Réponse personnalisée en moins d'1 h ouvrable<br/>
-          <span class="check"></span> Devis gratuit, sans engagement
+          <span class="check"></span> Devis gratuit, sans engagement<br/>
+          <span class="check"></span> Vos données ne sont jamais revendues
         </p>
       </form>
     </div>
@@ -747,10 +759,38 @@
           <input type="email" placeholder="Votre courriel" required aria-label="Courriel pour l'infolettre" />
           <button type="submit" aria-label="S'inscrire">→</button>
         </form>
+        <p class="newsletter__consent">
+          En vous inscrivant, vous consentez à recevoir nos courriels saisonniers. Désinscription en un clic, à tout moment. Voir notre <a href="politique-confidentialite.html">politique de confidentialité</a>.
+        </p>
       </div>
     </div>
+
+    <div class="footer__compliance-strip">
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        Conforme à la <strong>Loi 25</strong> du Québec
+      </span>
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="11" width="16" height="10" rx="2"/>
+          <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+        </svg>
+        Données chiffrées · HTTPS
+      </span>
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 2"/>
+        </svg>
+        Aucun cookie de traçage
+      </span>
+    </div>
+
     <div class="footer__bottom">
-      <p>&copy; 2026 Maison Cacao — Tous droits réservés. · <a href="#">Mentions légales</a> · <a href="#">Politique de confidentialité</a></p>
+      <p>&copy; 2026 Maison Cacao — Tous droits réservés. · <a href="mentions-legales.html">Mentions légales</a> · <a href="politique-confidentialite.html">Politique de confidentialité</a> · <a href="mailto:vieprivee@maison-cacao.ca">Exercer mes droits</a></p>
       <p class="footer__credit">
         Site démo conçu par
         <a href="https://nextiweb.ca" target="_blank" rel="noopener">Nextiweb.ca</a>

@@ -578,10 +578,22 @@
             <textarea name="message" rows="3"></textarea>
           </label>
         </div>
+
+        <div class="form__consent">
+          <label class="consent">
+            <input type="checkbox" name="consent" required />
+            <span class="consent__box" aria-hidden="true"></span>
+            <span class="consent__text">
+              I agree to Maison Cacao processing my personal information for the purpose of handling this request, in accordance with the <a href="privacy-policy.html">privacy policy</a> and Quebec's <strong>Law 25</strong>.
+            </span>
+          </label>
+        </div>
+
         <button type="submit" class="btn btn--copper btn--full">Send my request</button>
         <p class="form__note">
           <span class="check"></span> Personal reply in under 1 business hour<br/>
-          <span class="check"></span> Free quote, no commitment
+          <span class="check"></span> Free quote, no commitment<br/>
+          <span class="check"></span> Your data is never sold
         </p>
       </form>
     </div>
@@ -746,10 +758,38 @@
           <input type="email" placeholder="Your email" required aria-label="Email for the newsletter" />
           <button type="submit" aria-label="Subscribe">→</button>
         </form>
+        <p class="newsletter__consent">
+          By subscribing, you consent to receive our seasonal emails. One-click unsubscribe, anytime. See our <a href="privacy-policy.html">privacy policy</a>.
+        </p>
       </div>
     </div>
+
+    <div class="footer__compliance-strip">
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 2 4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/>
+          <path d="m9 12 2 2 4-4"/>
+        </svg>
+        Compliant with Quebec's <strong>Law 25</strong>
+      </span>
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="4" y="11" width="16" height="10" rx="2"/>
+          <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+        </svg>
+        Encrypted data · HTTPS
+      </span>
+      <span class="compliance-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 7v5l3 2"/>
+        </svg>
+        No tracking cookies
+      </span>
+    </div>
+
     <div class="footer__bottom">
-      <p>&copy; 2026 Maison Cacao — All rights reserved. · <a href="#">Legal notice</a> · <a href="#">Privacy policy</a></p>
+      <p>&copy; 2026 Maison Cacao — All rights reserved. · <a href="legal-notice.html">Legal notice</a> · <a href="privacy-policy.html">Privacy policy</a> · <a href="mailto:vieprivee@maison-cacao.ca">Exercise my rights</a></p>
       <p class="footer__credit">
         Demo site designed by
         <a href="https://nextiweb.ca" target="_blank" rel="noopener">Nextiweb.ca</a>

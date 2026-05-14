@@ -14,10 +14,6 @@
       <image:loc>https://maison-cacao.ca/images/optimized/hero.jpg</image:loc>
       <image:title>Maison Cacao — Tablettes single-origin</image:title>
     </image:image>
-    <image:image>
-      <image:loc>https://maison-cacao.ca/images/optimized/atelier.jpg</image:loc>
-      <image:title>Atelier de la Maison Cacao</image:title>
-    </image:image>
   </url>
   <url>
     <loc>https://maison-cacao.ca/index-en.html</loc>
@@ -27,9 +23,37 @@
     <xhtml:link rel="alternate" hreflang="fr-CA" href="https://maison-cacao.ca/" />
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://maison-cacao.ca/index-en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://maison-cacao.ca/" />
-    <image:image>
-      <image:loc>https://maison-cacao.ca/images/optimized/hero.jpg</image:loc>
-      <image:title>Maison Cacao — Single-origin chocolate bars</image:title>
-    </image:image>
+  </url>
+  <url>
+    <loc>https://maison-cacao.ca/politique-confidentialite.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://maison-cacao.ca/politique-confidentialite.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://maison-cacao.ca/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://maison-cacao.ca/privacy-policy.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://maison-cacao.ca/politique-confidentialite.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://maison-cacao.ca/privacy-policy.html" />
+  </url>
+  <url>
+    <loc>https://maison-cacao.ca/mentions-legales.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://maison-cacao.ca/mentions-legales.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://maison-cacao.ca/legal-notice.html" />
+  </url>
+  <url>
+    <loc>https://maison-cacao.ca/legal-notice.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="fr-CA" href="https://maison-cacao.ca/mentions-legales.html" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://maison-cacao.ca/legal-notice.html" />
   </url>
 </urlset>
