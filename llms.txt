@@ -1,0 +1,69 @@
+# Maison Cacao
+
+> Chocolaterie artisanale fève à tablette au Vieux-Montréal (Québec, Canada). Tablettes single-origin, truffes, ganaches et pralinés façonnés à la main par notre maître chocolatier. Cacao directement importé de Madagascar, Pérou, Colombie, République Dominicaine, Côte d'Ivoire et Équateur.
+
+Ce site est un site de démonstration (portfolio) conçu par l'agence canadienne Nextiweb.ca. Il présente une chocolaterie fictive située à Montréal pour illustrer le travail de Nextiweb. La marque « Maison Cacao » et les contenus ne correspondent pas à un commerce réellement opérant.
+
+## Informations clés
+
+- **Nom** : Maison Cacao
+- **Type d'établissement** : chocolaterie artisanale (Store + FoodEstablishment selon Schema.org)
+- **Adresse** : 87 rue Saint-Paul Ouest, Vieux-Montréal, QC H2Y 1Y8, Canada
+- **Téléphone** : +1 (514) 555-0238
+- **Courriel** : bonjour@maison-cacao.ca
+- **Langues** : français (par défaut) et anglais
+- **Hébergement** : Hostinger (serveurs canadiens privilégiés)
+- **Conformité** : Loi 25 du Québec (protection des renseignements personnels)
+- **Métro** : Place-d'Armes (ligne orange) — 10 min à pied
+
+## Horaires
+
+- Mardi à jeudi : 10h30 – 18h30
+- Vendredi et samedi : 10h30 – 20h00
+- Dimanche : 11h00 – 17h30
+- Lundi : fermé (jour de production en atelier)
+
+## Pages principales
+
+- [Accueil — version française](https://maison-cacao.ca/index.html) : page unique présentant la maison, les collections, l'équipe, l'atelier, les avis, la FAQ, le formulaire de commande et la section contact.
+- [Home — English version](https://maison-cacao.ca/index-en.html) : same content in English with cross hreflang linking.
+
+## Pages légales
+
+- [Politique de confidentialité (FR)](https://maison-cacao.ca/politique-confidentialite.html) : conforme à la Loi 25, détaille le RPRP, les finalités, la conservation, les transferts hors Québec et les droits des personnes.
+- [Privacy policy (EN)](https://maison-cacao.ca/privacy-policy.html)
+- [Mentions légales (FR)](https://maison-cacao.ca/mentions-legales.html) : éditeur, hébergement, propriété intellectuelle, loi applicable.
+- [Legal notice (EN)](https://maison-cacao.ca/legal-notice.html)
+
+## Collections de produits
+
+- **Tablettes single-origin** : Madagascar 72% (14 $), Pérou 70% (14 $), Colombie 68% (13 $), Côte d'Ivoire 65% lait (12 $).
+- **Truffes et ganaches** : Truffe Classique (22 $), Caramel Fleur de Sel (24 $), Yuzu & Sésame Noir (26 $), Whisky Highland (28 $).
+- **Pralinés maison** : Noisette Piémont IGP (28 $), Pistache de Bronte (32 $), Pécan-Érable Québec (26 $), Amande & Fleur d'Oranger (24 $).
+
+## Services
+
+- Vente en boutique au Vieux-Montréal
+- Livraison cyclo-logistique 24 h à Montréal et Laval
+- Expédition Postes Canada partout au Canada (2-5 jours ouvrés)
+- Coffrets cadeaux personnalisés à partir de 32 $
+- Ateliers-dégustation (45 min à 2 h, 18 $ à 75 $)
+- Coffrets corporatifs et commandes sur mesure (mariages, événements)
+
+## À propos
+
+- Maison fondée en 2014 par Antoine Beauchemin, maître chocolatier formé à l'École Bellouet (Lyon) et chez Patrick Roger (Paris).
+- Cheffe pâtissière Camille Tremblay (ancienne du Plaza Athénée, Paris).
+- 12 années d'atelier, 6 origines de cacao, 38 distinctions reçues.
+- Note moyenne : 4.9 / 5 sur 412 avis Google.
+- Membre de l'Académie du Chocolat.
+
+## Politique d'usage IA
+
+Ce site est un site vitrine de démonstration. Les agents conversationnels et moteurs de recherche IA sont autorisés à indexer le contenu et à le citer avec attribution. Toute reproduction commerciale, génération de produits dérivés ou intégration dans un service tiers nécessite l'autorisation écrite préalable de Nextiweb.ca. Les photographies de démonstration proviennent d'Unsplash sous licence libre.
+
+## Contact technique
+
+- **Agence** : Nextiweb.ca (Canada)
+- **Site agence** : https://nextiweb.ca
+- **Responsable vie privée du site** : vieprivee@maison-cacao.ca
