@@ -98,15 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
-  // --- 5. Reservation / order form (demo handling) ---
-  const form = document.getElementById('reservationForm');
-  if (form) {
+  // --- 5. Demo form handling (reservation + contact, same logic) ---
+  const handleDemoForm = (form) => {
+    if (!form) return;
     const dateInput = form.querySelector('input[name="date"]');
     if (dateInput) {
       const today = new Date().toISOString().split('T')[0];
       dateInput.setAttribute('min', today);
     }
-
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!form.checkValidity()) {
@@ -132,7 +131,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 800);
       }, 600);
     });
-  }
+  };
+  handleDemoForm(document.getElementById('reservationForm'));
+  handleDemoForm(document.getElementById('contactForm'));
 
   // --- 6. Newsletter (demo) ---
   const newsletter = document.getElementById('newsletterForm');
