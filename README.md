@@ -81,7 +81,7 @@ Le démo utilise pour le moment des photographies **Unsplash** chargées via leu
 1. Uploader tout le dossier (sauf `README.md`) à la racine du domaine
 2. Vérifier que le `.htaccess` Hostinger sert `index.html` par défaut
 3. Pour la version EN, accessible via `/index-en.html`
-4. Mettre à jour les URLs dans `index.html`, `index-en.html`, `sitemap.xml` et le Schema.org JSON-LD si le domaine final diffère de `maison-cacao.ca`
+4. Mettre à jour les URLs dans `index.html`, `index-en.html`, `sitemap.xml` et le Schema.org JSON-LD si le domaine final diffère de `art-artisanat.nextiwebstudio.ca`
 5. Forcer HTTPS depuis le panneau Hostinger
 
 ## Licence

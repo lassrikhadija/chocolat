@@ -1,5 +1,5 @@
 # Maison Cacao — robots.txt
-# https://maison-cacao.ca/
+# https://art-artisanat.nextiwebstudio.ca/
 
 # ============ Crawlers généraux ============
 User-agent: *
@@ -61,8 +61,8 @@ User-agent: MistralAI-User
 Allow: /
 
 # ============ Ressources structurées ============
-Sitemap: https://maison-cacao.ca/sitemap.xml
+Sitemap: https://art-artisanat.nextiwebstudio.ca/sitemap.xml
 
 # Description du site pour LLM (convention llms.txt — Jeremy Howard, fast.ai)
 # https://llmstxt.org/
-# https://maison-cacao.ca/llms.txt
+# https://art-artisanat.nextiwebstudio.ca/llms.txt
