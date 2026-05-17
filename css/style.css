@@ -1199,17 +1199,14 @@ input, select, textarea { font: inherit; color: inherit; }
 /* ----- Connect strip (LinkedIn) ----- */
 .nextiweb__connect {
   margin-top: 40px;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-  max-width: 720px;
+  display: flex;
+  justify-content: center;
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
   position: relative; z-index: 1;
 }
-@media (max-width: 640px) {
-  .nextiweb__connect { grid-template-columns: 1fr; }
-}
+.nextiweb__connect .nconnect { flex: 1; }
 .nconnect {
   display: flex; align-items: center; gap: 14px;
   padding: 14px 18px;
