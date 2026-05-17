@@ -893,6 +893,58 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .footer__credit a:hover { text-decoration: underline; }
 
+/* Credit links with LinkedIn icons */
+.credit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--copper);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .25s;
+}
+.credit-link:hover,
+.credit-link:focus-visible {
+  color: var(--copper-light);
+  text-decoration: none;
+  outline: none;
+}
+.credit-link span {
+  border-bottom: 1px solid transparent;
+  transition: border-color .25s;
+}
+.credit-link:hover span,
+.credit-link:focus-visible span {
+  border-bottom-color: var(--copper-light);
+}
+.credit-icon {
+  flex-shrink: 0;
+  color: var(--copper);
+  transition: transform .25s, color .25s;
+}
+.credit-link:hover .credit-icon,
+.credit-link:focus-visible .credit-icon {
+  color: var(--copper-light);
+  transform: translateY(-1px);
+}
+.credit-link--icon-only {
+  width: 22px; height: 22px;
+  justify-content: center;
+  margin-left: 4px;
+  border-radius: 50%;
+  border: 1px solid rgba(200,146,74,0.35);
+}
+.credit-link--icon-only:hover,
+.credit-link--icon-only:focus-visible {
+  background: var(--copper);
+  border-color: var(--copper);
+}
+.credit-link--icon-only:hover .credit-icon,
+.credit-link--icon-only:focus-visible .credit-icon {
+  color: #14090a;
+  transform: none;
+}
+
 @media (max-width: 900px) {
   .footer__inner { grid-template-columns: 1fr 1fr; gap: 40px; padding: 0 32px 60px; }
   .footer__brand { grid-column: span 2; }
