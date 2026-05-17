@@ -37,8 +37,8 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
-  overflow-x: hidden;
-  max-width: 100vw;
+  overflow-x: clip;
+  overflow-x: hidden; /* fallback */
 }
 body {
   background: var(--bg);
@@ -48,9 +48,10 @@ body {
   line-height: 1.7;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  max-width: 100vw;
+  overflow-x: clip;
+  overflow-x: hidden; /* fallback */
   position: relative;
+  width: 100%;
 }
 img { max-width: 100%; height: auto; display: block; }
 picture { display: block; max-width: 100%; }
@@ -74,8 +75,10 @@ input, select, textarea { font: inherit; color: inherit; }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 0 32px; }
 .container--narrow { max-width: var(--maxw-narrow); }
 .container--split {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px; align-items: center;
 }
+.container--split > * { min-width: 0; }
 @media (max-width: 900px) {
   .container--split { grid-template-columns: 1fr; gap: 50px; }
 }
@@ -435,7 +438,7 @@ input, select, textarea { font: inherit; color: inherit; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
 .menu__grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
   gap: 30px;
 }
 @media (max-width: 600px) {
@@ -443,13 +446,14 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 
 .dish {
-  display: grid; grid-template-columns: 200px 1fr;
+  display: grid; grid-template-columns: 200px minmax(0, 1fr);
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
   transition: all .35s;
 }
+.dish > * { min-width: 0; }
 .dish:hover {
   border-color: var(--copper-deep);
   transform: translateY(-4px);
@@ -501,7 +505,7 @@ input, select, textarea { font: inherit; color: inherit; }
 /* ============ ÉQUIPE ============ */
 .team {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
   gap: 30px;
 }
 .team__member {
@@ -541,7 +545,7 @@ input, select, textarea { font: inherit; color: inherit; }
 /* ============ ATELIER / GALLERY ============ */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: 240px 240px;
   gap: 16px;
 }
@@ -578,7 +582,7 @@ input, select, textarea { font: inherit; color: inherit; }
 .rating__text { color: var(--cream-muted); font-size: 0.9rem; }
 
 .reviews {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -729,9 +733,16 @@ input, select, textarea { font: inherit; color: inherit; }
   border-radius: var(--radius);
   padding: 40px;
   box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
-.form__row { margin-bottom: 20px; }
-.form__row--2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 600px) {
+  .form { padding: 28px 22px; }
+}
+.form__row { margin-bottom: 20px; min-width: 0; }
+.form__row--2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; min-width: 0; }
+.form__row--2 > * { min-width: 0; }
 @media (max-width: 500px) { .form__row--2 { grid-template-columns: 1fr; } }
 
 .form__field { display: flex; flex-direction: column; }
@@ -818,10 +829,11 @@ input, select, textarea { font: inherit; color: inherit; }
 }
 .footer__inner {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.2fr);
   gap: 50px;
   padding-bottom: 60px;
 }
+.footer__inner > * { min-width: 0; }
 .footer__brand .logo--footer {
   width: 200px; height: 70px;
   margin-bottom: 16px;
@@ -1081,10 +1093,11 @@ input, select, textarea { font: inherit; color: inherit; }
 
 .nextiweb__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   position: relative; z-index: 1;
 }
+.nextiweb__grid > * { min-width: 0; }
 @media (max-width: 1080px) {
   .nextiweb__grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
 }
