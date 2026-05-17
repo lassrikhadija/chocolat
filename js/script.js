@@ -133,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
   handleDemoForm(document.getElementById('reservationForm'));
-  handleDemoForm(document.getElementById('contactForm'));
 
   // --- 6. Newsletter (demo) ---
   const newsletter = document.getElementById('newsletterForm');

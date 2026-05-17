@@ -34,7 +34,12 @@
 /* ============ RESET ============ */
 *, *::before, *::after { box-sizing: border-box; }
 * { margin: 0; padding: 0; }
-html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
 body {
   background: var(--bg);
   color: var(--cream);
@@ -44,9 +49,12 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
 }
 img { max-width: 100%; height: auto; display: block; }
-picture { display: block; }
+picture { display: block; max-width: 100%; }
+iframe, svg, video { max-width: 100%; }
 a { color: inherit; text-decoration: none; transition: color .25s; }
 button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 input, select, textarea { font: inherit; color: inherit; }
@@ -370,13 +378,14 @@ input, select, textarea { font: inherit; color: inherit; }
 .split__media img { object-fit: cover; }
 .split__media-deco {
   position: absolute; top: 30px; left: 30px;
-  width: 100%; height: 600px;
+  width: calc(100% - 30px); height: 600px;
   border: 1px solid var(--copper);
   border-radius: var(--radius);
   z-index: 1;
 }
 @media (max-width: 900px) {
-  .split__media picture, .split__media img, .split__media-deco { height: 420px; }
+  .split__media picture, .split__media img { height: 420px; }
+  .split__media-deco { display: none; }
 }
 
 .stats {
@@ -790,53 +799,15 @@ input, select, textarea { font: inherit; color: inherit; }
   border-color: var(--copper); color: var(--copper); outline: none;
 }
 
-.contact-right {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.contact-form {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 32px 30px 28px;
-  box-shadow: var(--shadow-lg);
-}
-.contact-form__title {
-  font-family: var(--font-serif);
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--cream);
-  margin-bottom: 6px;
-}
-.contact-form__title::before {
-  content: ""; display: inline-block;
-  width: 28px; height: 1px;
-  background: var(--copper);
-  vertical-align: middle;
-  margin-right: 12px;
-}
-.contact-form__sub {
-  color: var(--cream-muted);
-  font-size: 0.92rem;
-  margin-bottom: 22px;
-  padding-left: 40px;
-}
-.contact-form .form__row { margin-bottom: 16px; }
-.contact-form .form__consent { margin: 4px 0 18px; }
-.contact-form .consent { padding: 12px 14px; }
-.contact-form .consent__text { font-size: 0.8rem; }
-
 .map {
-  height: 320px; border-radius: var(--radius); overflow: hidden;
+  height: 560px; border-radius: var(--radius); overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-lg);
 }
 .map iframe { width: 100%; height: 100%; border: 0; filter: invert(0.92) hue-rotate(180deg) sepia(0.15); }
 
 @media (max-width: 900px) {
-  .contact-right { gap: 20px; }
-  .map { height: 280px; }
+  .map { height: 360px; }
 }
 
 /* ============ FOOTER ============ */
@@ -996,9 +967,11 @@ input, select, textarea { font: inherit; color: inherit; }
   font-size: 11px; color: var(--cream-muted);
 }
 @media (max-width: 600px) {
-  .demo-badge { bottom: 16px; left: 16px; padding: 8px 14px 8px 12px; }
+  .demo-badge { bottom: 16px; left: 16px; max-width: calc(100vw - 32px); }
+  .demo-badge__main { padding: 8px 12px; }
   .demo-badge__text strong { font-size: 10px; }
   .demo-badge__text span { font-size: 10px; }
+  .demo-badge__linkedin { width: 34px; padding: 0 8px; }
 }
 
 /* ============ NEXTIWEB SERVICES ============ */
@@ -1323,13 +1296,15 @@ input, select, textarea { font: inherit; color: inherit; }
 
 .footer__compliance-strip {
   border-top: 1px solid var(--border);
-  padding: 22px 32px;
+  padding: 22px 24px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 28px;
-  max-width: var(--maxw); margin: 0 auto;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 .compliance-badge {
   display: inline-flex;
