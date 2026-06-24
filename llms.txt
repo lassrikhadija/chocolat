@@ -65,5 +65,5 @@ Ce site est un site vitrine de démonstration. Les agents conversationnels et mo
 ## Contact technique
 
 - **Agence** : Nextiweb.ca (Canada)
-- **Site agence** : https://nextiweb.ca
+- **Site agence** : https://nextiweb.ca/art-artisanat.html
 - **Responsable vie privée du site** : vieprivee@art-artisanat.nextiwebstudio.ca
