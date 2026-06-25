@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     else header.classList.remove('is-scrolled');
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
+  requestAnimationFrame(onScroll);
 
   // --- 2. Mobile burger menu ---
   const burger = document.getElementById('burger');
