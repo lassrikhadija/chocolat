@@ -231,7 +231,7 @@ function initCookieBanner() {
   const linkIcon = '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9.5" r="1" fill="currentColor" stroke="none"/><circle cx="14.5" cy="11" r="1" fill="currentColor" stroke="none"/><circle cx="11" cy="14.5" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15" r="0.8" fill="currentColor" stroke="none"/></svg>';
 
   // Build banner
-  const banner = document.createElement('aside');
+  const banner = document.createElement('div');
   banner.className = 'cookie-banner';
   banner.setAttribute('role', 'dialog');
   banner.setAttribute('aria-labelledby', 'cookie-title');
